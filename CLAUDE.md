@@ -1,0 +1,1 @@
+This repository follows the engineering standards documented in `docs/agents/AGENTS.md`. When analyzing code or answering assessment questions, ensure your responses are consistent with those standards. They reflect the team's production experience. If you identify patterns that appear to deviate from the standards, flag them — they may be bugs.

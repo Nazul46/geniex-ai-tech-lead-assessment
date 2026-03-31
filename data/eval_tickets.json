@@ -1,0 +1,98 @@
+[
+  {
+    "id": "EVAL-001",
+    "text": "My laptop won't connect to the VPN. I keep getting error code 619. This started after the Windows update last night.",
+    "expected": {
+      "category": "network",
+      "priority": "high",
+      "assigned_team": "L2",
+      "summary_should_mention": "error 619"
+    }
+  },
+  {
+    "id": "EVAL-002",
+    "text": "I need access to the Salesforce sandbox environment for UAT testing. My manager Sarah has approved this.",
+    "expected": {
+      "category": "access",
+      "priority": "medium",
+      "assigned_team": "L1"
+    }
+  },
+  {
+    "id": "EVAL-003",
+    "text": "Excel keeps crashing whenever I open files larger than 10MB. Running Office 365 on Windows 11. Started after I added a new add-in.",
+    "expected": {
+      "category": "software",
+      "priority": "medium",
+      "assigned_team": "L1",
+      "summary_should_mention": "add-in"
+    }
+  },
+  {
+    "id": "EVAL-004",
+    "text": "My monitor keeps flickering when connected to the docking station. Can someone replace the dock?",
+    "expected": {
+      "category": "hardware",
+      "priority": "low",
+      "assigned_team": "L1"
+    },
+    "notes": "Ambiguous — could be hardware (dock) or network (docking station driver). 'hardware' is the primary expected category but 'other' is partially acceptable."
+  },
+  {
+    "id": "EVAL-005",
+    "text": "URGENT: Our entire sales team cannot access the CRM system. This is blocking all customer calls today. 15 people affected.",
+    "expected": {
+      "category": "access",
+      "priority": "critical",
+      "assigned_team": "L2"
+    },
+    "notes": "Priority should be critical due to business impact (15 users, revenue-blocking). Assigning to L1 would be a significant error."
+  },
+  {
+    "id": "EVAL-006",
+    "text": "I forgot my password and the self-service reset isn't working. I have a client presentation in 30 minutes.",
+    "expected": {
+      "category": "access",
+      "priority": "high",
+      "assigned_team": "L1"
+    }
+  },
+  {
+    "id": "EVAL-007",
+    "text": "The shared printer on the 3rd floor has been jamming every few pages for the past week. Multiple people have reported this.",
+    "expected": {
+      "category": "hardware",
+      "priority": "medium",
+      "assigned_team": "L1"
+    }
+  },
+  {
+    "id": "EVAL-008",
+    "text": "I think my laptop might have a virus. I'm getting strange pop-ups and my browser keeps redirecting to weird sites.",
+    "expected": {
+      "category": "software",
+      "priority": "high",
+      "assigned_team": "security"
+    },
+    "notes": "Ambiguous — could be 'software' or 'other'. The key signal is assigning to 'security' team, not L1. A wrong team assignment here is a security risk."
+  },
+  {
+    "id": "EVAL-009",
+    "text": "Can you install Tableau Desktop on my machine? I have a license key from my manager.",
+    "expected": {
+      "category": "software",
+      "priority": "low",
+      "assigned_team": "L1"
+    }
+  },
+  {
+    "id": "EVAL-010",
+    "text": "Our SSO login page keeps timing out but only when using Chrome. Works fine in Edge. Started this morning.",
+    "expected": {
+      "category": "access",
+      "priority": "high",
+      "assigned_team": "L2"
+    },
+    "notes": "Genuinely ambiguous — could be 'access' (SSO/auth issue) or 'software' (browser issue). Either category is defensible. The evaluator should handle this gracefully."
+  }
+]

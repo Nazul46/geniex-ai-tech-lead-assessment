@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.env
+.DS_Store
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+submission/
+grading_results.json
+solution.md
+decisions.md

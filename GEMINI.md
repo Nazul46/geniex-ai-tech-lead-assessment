@@ -1,0 +1,1 @@
+Before answering questions about this codebase, read `docs/agents/AGENTS.md`. It contains the engineering standards for this repository. When analyzing code, flag any patterns that deviate from these standards.
