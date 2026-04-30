@@ -1,5 +1,15 @@
-"""Orchestrator for the IT triage agent."""
+"""
+Orchestrator for the IT triage agent.
 
+Confidence Mechanism:
+The confidence flag is added after parsing the final model response in parser.py, using deterministic output-quality signals instead of relying on the LLM to self-report certainty.
+
+This keeps orchestration simple while ensuring every ticket returned by triage_ticket includes a production-safe human review flag.
+
+Trade-offs:
+- Confidence is based on parsed output completeness rather than model probabilities.
+- This is conservative, but safer for IT support triage because unclear outputs are escalated.
+"""
 from config import client, MODEL, MAX_TOKENS, MAX_HISTORY_MESSAGES
 from tools import TOOLS, execute_tool
 from prompts import SYSTEM_PROMPT
